@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>正在跳转到 Notion 页面...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting...</title>
+
+  <!-- Misskey rel=me 认证 -->
   <link rel="me" href="https://shweet.icu/@theo">
 
+  <!-- 自动跳转 -->
+  <meta http-equiv="refresh" content="3;url=https://killtheo.notion.site/draws">
+
   <style>
-    body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      background: #0e0e0e;
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
     }
 
     h1 {
-      font-size: 2.2em;
+      font-size: 2.5em;
       margin-bottom: 0.4em;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
     }
 
     p {
       font-size: 1.2em;
-      margin-bottom: 1em;
-      opacity: 0.85;
+      opacity: 0.8;
     }
 
     .button {
-      background-color: #00c4b4;
-      color: white;
+      margin-top: 2em;
+      padding: 12px 28px;
+      background: #00fff7;
+      color: #000;
       border: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-size: 1em;
-      cursor: pointer;
+      border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      transition: background-color 0.3s;
+      font-size: 1em;
+      box-shadow: 0 0 10px #00fff7;
+      transition: all 0.3s ease-in-out;
     }
 
     .button:hover {
-      background-color: #00a396;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00fff7;
     }
 
-    .small {
+    .hint {
+      margin-top: 3em;
       font-size: 0.9em;
-      margin-top: 2em;
-      opacity: 0.6;
+      color: #777;
     }
   </style>
-
-  <meta http-equiv="refresh" content="3;url=https://killtheo.notion.site/draws">
 </head>
 <body>
-  <h1>🔗 正在跳转中...</h1>
-  <p>我们即将带你前往 Notion 页面</p>
-  <a href="https://your-notion-page-here" class="button">如果没有跳转，请点击这里</a>
-
+  <h1>正在跳转...</h1>
+  <p>即将带你进入我的 Notion 世界</p>
+  <a href="https://your-notion-page-here" class="button">没跳转？点我！</a>
  
 </body>
 </html>
